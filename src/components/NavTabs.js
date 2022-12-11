@@ -1,4 +1,5 @@
 import React from "react";
+import "../../src/style.css";
 const inheritColor = {
   color: "inherit",
 };
@@ -8,7 +9,11 @@ function NavTabs({ currentPage, handlePageChange }) {
     <header>
       <div class="leftNavBar">
         <li>
-          <a href="#blog" style={inheritColor}>
+          <a
+            href="#blog"
+            onClick={() => handlePageChange("Blog")}
+            style={inheritColor}
+          >
             BLOG
           </a>
         </li>
