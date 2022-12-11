@@ -1,16 +1,19 @@
 import React from "react";
+const inheritColor = {
+  color: "inherit",
+};
 
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <header>
       <div class="leftNavBar">
         <li>
-          <a href="#blog" style="color: inherit">
+          <a href="#blog" style={inheritColor}>
             BLOG
           </a>
         </li>
         <li>
-          <a href="#map" style="color: inherit">
+          <a href="#map" style={inheritColor}>
             MAP
           </a>
         </li>
@@ -18,12 +21,12 @@ function NavTabs({ currentPage, handlePageChange }) {
       <h1>Travel Blog</h1>
       <div class="rightNavBar">
         <li>
-          <a href="#aboutMe" style="color: inherit">
+          <a href="#aboutMe" style={inheritColor}>
             ABOUT ME
           </a>
         </li>
         <li>
-          <a href="contact" style="color: inherit">
+          <a href="contact" style={inheritColor}>
             CONTACT
           </a>
         </li>
