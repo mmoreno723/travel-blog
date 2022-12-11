@@ -18,7 +18,11 @@ function NavTabs({ currentPage, handlePageChange }) {
           </a>
         </li>
         <li>
-          <a href="#map" style={inheritColor}>
+          <a
+            href="#map"
+            style={inheritColor}
+            onClick={() => handlePageChange("Map")}
+          >
             MAP
           </a>
         </li>
@@ -26,12 +30,20 @@ function NavTabs({ currentPage, handlePageChange }) {
       <h1>Travel Blog</h1>
       <div class="rightNavBar">
         <li>
-          <a href="#aboutMe" style={inheritColor}>
+          <a
+            href="#aboutMe"
+            style={inheritColor}
+            onClick={() => handlePageChange("AboutMe")}
+          >
             ABOUT ME
           </a>
         </li>
         <li>
-          <a href="contact" style={inheritColor}>
+          <a
+            href="#contact"
+            style={inheritColor}
+            onClick={() => handlePageChange("Contact")}
+          >
             CONTACT
           </a>
         </li>
