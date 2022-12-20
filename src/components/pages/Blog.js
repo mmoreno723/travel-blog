@@ -7,11 +7,11 @@ const boxContainer = {
 
 const box = {
   border: "black solid 2px",
-  height: "400px",
+  height: "450px",
 };
 
 const boxesGap = {
-  gap: "20px",
+  gap: "55px",
 };
 
 export default function Blog() {
@@ -20,18 +20,24 @@ export default function Blog() {
       <div class="container" style={boxContainer}>
         <div id="boxes" class="row" style={boxesGap}>
           <div id="box" class="col" style={box}>
-            <p>box 1</p>
+            <img
+              id="boxImage"
+              src="empire-state-building.png"
+              alt="empire-state-building"
+            />
           </div>
           <div id="box" class="col" style={box}>
-            <p>box 2</p>
+            <img
+              id="boxImage"
+              src="manhattan-bridge.jpeg"
+              alt="manhattan-bridge"
+            />
           </div>
           <div id="box" class="col" style={box}>
-            <p>box 3</p>
+            <img id="boxImage" src="brooklyn.jpg" alt="brooklyn" />
           </div>
           <div class="w-100"></div>
-          <div id="box" class="col" style={box}>
-            <p>box 4</p>
-          </div>
+          <div id="box" class="col" style={box}></div>
           <div id="box" class="col" style={box}>
             <p>box 5</p>
           </div>
